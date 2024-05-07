@@ -1,0 +1,21 @@
+spring:
+  application:
+    name:
+      "MessageCollectorServer"
+  datasource:
+    url: jdbc:postgresql://localhost:5432/sms_collector_db
+    username: postgres
+    password: 8749
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: false
+    properties:
+      format_sql: true
+config:
+  smsc:
+    login: vlat
+    password: 123_VlAd_321

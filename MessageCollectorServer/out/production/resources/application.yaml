@@ -1,0 +1,26 @@
+spring:
+  application:
+    name:
+      "MedAppServer"
+  datasource:
+    url: jdbc:postgresql://localhost:5432/medapp_database
+    username: postgres
+    password: 8749
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    properties:
+      format_sql: true
+  mail:
+    host: smtp.mail.ru
+    port: 465
+    username: vladislavbymain@mail.ru
+    password: VA3ZZrszWRmk9q9LYAu4
+    protocol: smtps
+    from: vladislavbymain@mail.ru
+    smtps:
+      auth: true

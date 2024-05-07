@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>СМС-коллектор</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<header hidden class="header">
+			<h1><b>SMS-Collector</b></h1>
+		</header>
+		<main>
+			<aside class="user-selector">
+				<div id="users-selector-head">
+					<h2 class="head2"><b>Пользователи:</b></h2>
+				</div>
+
+				<div id="users-list">
+				</div>
+			</aside>
+
+			<div class="user-page">
+				<div id="selected-user-info">
+					<h2 class="head2"><b></b></h2>
+				</div>
+				
+				<div class="user-messages-vrapper">
+					<div id="user-messages">
+						<!--<div id="container"></div>-->
+					</div>
+				</div>
+
+				<div id="user-interaction">
+					<form id="send-sms-form" action="#" method="POST">
+						<input
+							id="sms-input-text"
+							type="text"
+							name="sms-to-user"
+							placeholder="Введите смс пользователю"
+						/>
+						<button id="send-sms-btn" type="submit"></button>
+						<button id="update-data-btn" hidden></button>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer>Bychkovsky V.R.</footer>
+		<script src="./js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,204 @@
+body{
+	max-width: 100vw;
+	max-height: 100vh;
+	width:100vw;
+	height:100vh;
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	overflow:hidden;
+}
+main{
+	height: auto;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	background-color: rgb(0, 0, 0, 1.0);
+}
+header{
+	padding:5px;
+	background-color: #227038;
+	border-width: 10px;
+	border-color: #000;
+}
+h1{
+	padding: 0px;
+	margin:0px;
+	color: #FFF;
+}
+footer{
+	text-align: right;
+}
+
+.user-selector{
+	background-color: #EEE;
+	flex-basis: 200px;
+	box-shadow: 0px 0px 5px;
+	display: flex;
+	flex-direction: column;
+}
+.users-list{
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap:2px;
+	overflow-y: auto;
+}
+.user-btn{
+	box-sizing: border-box;
+	height: 50px;
+	width: 100%;
+	flex-basis: 50px;
+	text-align: center;
+	padding: 5px;
+	background-color: rgb(0, 0, 0, 0.3);
+	border-color: transparent;
+}
+.user-btn:hover, .user-btn:focus{
+	background-color: rgb(0, 0, 0, 0.35);
+	box-shadow: 0px 0px 5px;
+}
+.head3{
+	color:#FFF;
+	font-size: 25px;
+	text-align: center;
+	margin:auto;
+}
+
+.user-page{
+	background-color: DarkOliveGreen;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	background-color: #A8E4A0;
+	box-shadow: 0px 0px 5px;
+	background-image: url(../../source/back-pattern.png);
+	max-height: 100vh;
+
+}
+#selected-user-info{
+	background-color: rgb(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 5px;
+	padding-inline: 10px;
+	padding-block: 5px;
+}
+.user-messages-vrapper{
+	flex-grow: 1;
+	min-height: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+}
+#user-messages{
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	padding: 5px;
+	gap:5px;
+	min-height: 0px;
+	height: 100%;
+	overflow-y:auto;
+		
+}
+
+.message{
+	background-color: rgb(230, 240, 230, 1.0);
+	border-radius: 15px 15px 0px 15px;
+	display: flex;
+	flex-direction: column;
+}
+.message-top{
+	border-radius: 15px 15px 0px 0px;
+	background-color: rgb(0, 60, 0, 0.2);
+	font-weight: 900;
+	padding: 5px;
+}
+.message-text{
+	margin: 0px;
+	flex-grow: 1;
+	padding: 5px;
+}
+.message-date{
+	margin: 0px;
+	padding: 0px 5px 2px 5px;
+	color: #888;
+	text-align: right;
+}
+
+#user-interaction{
+	padding: 5px;
+	margin:5px;
+	border-radius:15px;
+	background-color: #89AC76;
+	box-shadow: 0px 0px 5px;
+}
+#send-sms-form{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap:5px;
+}
+#sms-input-text{
+	width:auto;
+	flex-grow: 1;
+	border-color: transparent;
+	background-color: transparent;
+	color:#FFF;
+	font-size: 20px;
+}
+#sms-input-text::placeholder{
+	color: lightgray;
+}
+#sms-input-text:focus, #sms-input-text:hover {
+	border-radius: 10px;
+	background-color: rgb(256, 256, 256, 0.2);
+	outline: none;
+}
+#send-sms-btn{
+	flex-basis: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border-color: transparent;
+	background-image: url(../../source/send.jpg);
+	background-repeat: no-repeat;
+	background-clip: border-box;
+	background-size: contain;
+	background-color: rgb(0, 0, 0, 0.2);
+}
+#send-sms-btn:hover{
+	scale:1.1;
+	border-radius: 45%;
+	box-shadow: 0px 0px 5px;
+}
+#update-data-btn{
+	flex-basis: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border-color: transparent;
+	background-image: url(../../source/update.png);
+	background-repeat: no-repeat;
+	background-clip: border-box;
+	background-size: contain;
+	background-color: rgb(0, 0, 0, 0.2);
+}
+#update-data-btn:hover{
+	scale:1.1;
+	border-radius: 45%;
+	box-shadow: 0px 0px 5px;
+}
+
+#users-selector-head{
+	padding: 5px;
+	background-color: #44944A;
+	font-weight: 900;
+	box-shadow: 0px 0px 5px;
+}
+.head2{
+	color:#FFF;
+	padding: 0px;
+	margin: 0px;
+}
